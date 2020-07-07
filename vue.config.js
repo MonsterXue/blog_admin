@@ -1,4 +1,17 @@
+const path = require("path");
 module.exports = {
+  publicPath: "./",
+  configureWebpack: function (config) {
+    // console.log(config.module.rules[2])
+    return {
+      resolve: {
+        // extensions: ['.js', '.json'],
+        alias: {
+          "@": path.resolve(__dirname, "./src")
+        }
+      }
+    };
+  },
   devServer: {
     https: false,
     proxy: {
