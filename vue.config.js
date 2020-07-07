@@ -4,7 +4,7 @@ module.exports = {
     proxy: {
       "/v1": {
         changeOrigin: true,
-        target: "http://127.0.0.1:8100"
+        target: "http://47.97.216.43:8100"
       },
       "/group1": {
         changeOrigin: true,
